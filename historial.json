@@ -1,0 +1,34 @@
+[
+    {
+        "imagen": "imagen_subida",
+        "clase_predicha": "Clase1",
+        "confianza": "98.65%",
+        "descripcion": "Descripci\u00c3\u00b3n de la afecci\u00c3\u00b3n 1.",
+        "sintomas": "S\u00c3\u00adntomas comunes de la afecci\u00c3\u00b3n 1.",
+        "tratamientos": "Posibles tratamientos para la afecci\u00c3\u00b3n 1."
+    },
+    {
+        "imagen": "imagen_subida",
+        "clase_predicha": "Clase1",
+        "confianza": "98.65%",
+        "descripcion": "Descripci\u00c3\u00b3n de la afecci\u00c3\u00b3n 1.",
+        "sintomas": "S\u00c3\u00adntomas comunes de la afecci\u00c3\u00b3n 1.",
+        "tratamientos": "Posibles tratamientos para la afecci\u00c3\u00b3n 1."
+    },
+    {
+        "imagen": "imagen_subida",
+        "clase_predicha": "Clase1",
+        "confianza": "98.65%",
+        "descripcion": "Descripci\u00c3\u00b3n de la afecci\u00c3\u00b3n 1.",
+        "sintomas": "S\u00c3\u00adntomas comunes de la afecci\u00c3\u00b3n 1.",
+        "tratamientos": "Posibles tratamientos para la afecci\u00c3\u00b3n 1."
+    },
+    {
+        "imagen": "imagen_subida",
+        "clase_predicha": "Clase1",
+        "confianza": "98.65%",
+        "descripcion": "Descripci\u00c3\u00b3n de la afecci\u00c3\u00b3n 1.",
+        "sintomas": "S\u00c3\u00adntomas comunes de la afecci\u00c3\u00b3n 1.",
+        "tratamientos": "Posibles tratamientos para la afecci\u00c3\u00b3n 1."
+    }
+]

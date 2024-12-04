@@ -53,6 +53,9 @@ transform = transforms.Compose([
 
 # Función para realizar la predicción
 def predecir_imagen(image):
+    if image is None:
+        return "Por favor, sube una imagen para analizar."
+
     img = transform(image).unsqueeze(0).to(device)
     with torch.no_grad():
         outputs = model(img)
@@ -66,7 +69,7 @@ def predecir_imagen(image):
     tratamientos = info.get('tratamientos', 'No disponible.')
     
     historial_entry = {
-        'imagen': image.name if hasattr(image, 'name') else 'imagen_subida',
+        'imagen': image.filename if hasattr(image, 'filename') else 'imagen_subida',
         'clase_predicha': predicted_class,
         'confianza': f"{confidence.item()*100:.2f}%",
         'descripcion': descripcion,
@@ -75,16 +78,27 @@ def predecir_imagen(image):
     }
     guardar_historial(historial_entry)
     
-    resultado = f"**Clase Predicha:** {predicted_class}\n"
-    resultado += f"**Confianza:** {confidence.item()*100:.2f}%\n\n"
-    resultado += f"**Descripción:** {descripcion}\n\n"
-    resultado += f"**Síntomas Comunes:** {sintomas}\n\n"
-    resultado += f"**Posibles Tratamientos:** {tratamientos}\n\n"
-    resultado += "**Recomendación:** Se sugiere consultar a un dermatólogo para una evaluación más detallada."
-    
+    # Generar resultado en HTML para una mejor presentación
+    resultado = f"""
+    <div style="font-family: Arial, sans-serif; line-height: 1.6; padding: 10px;">
+        <h2>Resultados del Análisis</h2>
+        <p><strong>Clase Predicha:</strong> {predicted_class}</p>
+        <p><strong>Confianza:</strong> {confidence.item()*100:.2f}%</p>
+        <hr />
+        <h3>Descripción</h3>
+        <p>{descripcion}</p>
+        <h3>Síntomas Comunes</h3>
+        <p>{sintomas}</p>
+        <h3>Posibles Tratamientos</h3>
+        <p>{tratamientos}</p>
+        <hr />
+        <h3>Recomendación</h3>
+        <p style="color: #d9534f;"><em>Se sugiere consultar a un dermatólogo para una evaluación más detallada.</em></p>
+    </div>
+    """
     return resultado
 
-# Función para guardar el historial
+# Guardar el historial
 def guardar_historial(entry):
     historial_file = 'historial.json'
     if os.path.exists(historial_file):
@@ -96,7 +110,7 @@ def guardar_historial(entry):
     with open(historial_file, 'w') as f:
         json.dump(historial, f, indent=4)
 
-# Función para mostrar el historial
+# Historial
 def mostrar_historial():
     historial_file = 'historial.json'
     if os.path.exists(historial_file):
@@ -107,23 +121,54 @@ def mostrar_historial():
     else:
         return pd.DataFrame(columns=['imagen', 'clase_predicha', 'confianza', 'descripcion', 'sintomas', 'tratamientos'])
 
-# Construir la interfaz con Gradio
+# Interfaz con Gradio
 with gr.Blocks() as demo:
     gr.Markdown("# Clasificación de Afecciones de la Piel")
-    gr.Markdown("Sube una imagen de una zona de la piel para obtener una predicción sobre la posible afección.")
+    
     with gr.Tabs():
         with gr.TabItem("Análisis"):
             with gr.Row():
                 with gr.Column(scale=1):
                     image_input = gr.Image(type='pil', label="Sube una imagen de la piel")
+                    gr.Markdown("Sube una imagen de una zona de la piel para obtener una predicción sobre la posible afección.")
                     analyze_button = gr.Button("Analizar")
-                with gr.Column(scale=1):
-                    output_text = gr.Textbox(label="Resultados", lines=15)
-            analyze_button.click(fn=predecir_imagen, inputs=image_input, outputs=output_text)
+                with gr.Column(scale=2):
+                    # Placeholder
+                    output_html = gr.HTML(
+                        value="""
+                        <div style="font-family: Arial, sans-serif; color: #555; padding: 10px;">
+                            <h2>Resultados del Análisis</h2>
+                            <p>Después de analizar una imagen, los resultados se mostrarán aquí.</p>
+                        </div>
+                        """,
+                        label="Resultados"
+                    )
+            analyze_button.click(fn=predecir_imagen, inputs=image_input, outputs=output_html)
+        
         with gr.TabItem("Historial"):
             historial_button = gr.Button("Mostrar Historial")
-            historial_output = gr.Dataframe()
+            historial_output = gr.Dataframe(
+                headers=["Imagen", "Clase Predicha", "Confianza", "Descripción", "Síntomas", "Tratamientos"],
+                datatype=["str", "str", "str", "str", "str", "str"],
+                interactive=False
+            )
             historial_button.click(fn=mostrar_historial, inputs=None, outputs=historial_output)
+    
+    gr.HTML("""
+    <style>
+        .gr-button.primary {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .gr-button.secondary {
+            background-color: #008CBA;
+            color: white;
+        }
+        .gr-button:hover {
+            opacity: 0.8;
+        }
+    </style>
+    """)
 
 # Ejecutar la interfaz
 demo.launch()

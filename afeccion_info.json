@@ -1,62 +1,62 @@
 {
-    "Clase1": {
-        "descripcion": "Descripción de la afección 1.",
-        "sintomas": "Síntomas comunes de la afección 1.",
-        "tratamientos": "Posibles tratamientos para la afección 1."
+    "Acne": {
+        "descripcion": "El acné es una afección cutánea que ocurre cuando los folículos pilosos se obstruyen con grasa y células muertas de la piel, causando puntos negros, espinillas o granos.",
+        "sintomas": "Aparición de granos, puntos negros, puntos blancos, inflamación o enrojecimiento en la piel, generalmente en la cara, pecho y espalda.",
+        "tratamientos": "Limpieza facial regular, medicamentos tópicos como peróxido de benzoilo, retinoides o antibióticos, y en casos severos, medicamentos orales como isotretinoína."
     },
-    "Clase2": {
-        "descripcion": "Descripción de la afección 2.",
-        "sintomas": "Síntomas comunes de la afección 2.",
-        "tratamientos": "Posibles tratamientos para la afección 2."
+    "Actinic Keratosis": {
+        "descripcion": "La queratosis actínica es una lesión cutánea causada por la exposición prolongada al sol, que puede aparecer como una mancha áspera o escamosa en la piel.",
+        "sintomas": "Manchas ásperas o escamosas en áreas expuestas al sol, como el rostro, manos, cuero cabelludo o cuello. Estas lesiones pueden ser rosadas, rojas o marrones.",
+        "tratamientos": "Crioterapia, cremas tópicas con fluorouracilo o imiquimod, terapia fotodinámica o, en algunos casos, extirpación quirúrgica."
     },
-    "Clase3": {
-        "descripcion": "Descripción de la afección 3.",
-        "sintomas": "Síntomas comunes de la afección 3.",
-        "tratamientos": "Posibles tratamientos para la afección 3."
+    "Basal Cell Carcinoma": {
+        "descripcion": "El carcinoma de células basales es un tipo de cáncer de piel de crecimiento lento que suele desarrollarse en áreas expuestas al sol.",
+        "sintomas": "Protuberancias brillantes o cerosas, úlceras que no cicatrizan, o manchas rojas planas que pueden sangrar o formar costras.",
+        "tratamientos": "Cirugía para extirpar la lesión, crioterapia, radioterapia o medicamentos tópicos como imiquimod."
     },
-    "Clase4": {
-        "descripcion": "Descripción de la afección 4.",
-        "sintomas": "Síntomas comunes de la afección 4.",
-        "tratamientos": "Posibles tratamientos para la afección 4."
+    "Dermatofibroma": {
+        "descripcion": "El dermatofibroma es un pequeño nódulo benigno que se forma en la piel, generalmente como resultado de una lesión menor o picadura de insecto.",
+        "sintomas": "Nódulo firme, generalmente marrón o rojizo, que puede ser doloroso al tacto y se encuentra comúnmente en las piernas o brazos.",
+        "tratamientos": "Generalmente no requiere tratamiento. En casos sintomáticos, puede eliminarse quirúrgicamente."
     },
-    "Clase5": {
-        "descripcion": "Descripción de la afección 5.",
-        "sintomas": "Síntomas comunes de la afección 5.",
-        "tratamientos": "Posibles tratamientos para la afección 5."
+    "Eczemaa": {
+        "descripcion": "El eczema es una afección crónica de la piel caracterizada por inflamación, picazón y sequedad.",
+        "sintomas": "Parches secos, enrojecidos y con picazón que pueden formar ampollas o exudados. Común en pliegues de la piel como codos, rodillas y cuello.",
+        "tratamientos": "Hidratación regular, cremas con corticosteroides, antihistamínicos para la picazón y, en casos graves, inmunosupresores."
     },
-    "Clase6": {
-        "descripcion": "Descripción de la afección 6.",
-        "sintomas": "Síntomas comunes de la afección 6.",
-        "tratamientos": "Posibles tratamientos para la afección 6."
+    "Melanoma": {
+        "descripcion": "El melanoma es un tipo agresivo de cáncer de piel que se origina en los melanocitos, las células productoras de pigmento.",
+        "sintomas": "Lunares irregulares con bordes desiguales, múltiples colores y un tamaño mayor a 6 mm. También puede haber cambios en lunares preexistentes.",
+        "tratamientos": "Extirpación quirúrgica, inmunoterapia, quimioterapia o radioterapia según el estadio del melanoma."
     },
-    "Clase7": {
-        "descripcion": "Descripción de la afección 7.",
-        "sintomas": "Síntomas comunes de la afección 7.",
-        "tratamientos": "Posibles tratamientos para la afección 7."
+    "Nevus": {
+        "descripcion": "El nevus, o lunar, es una acumulación benigna de células pigmentadas en la piel.",
+        "sintomas": "Manchas o protuberancias marrones, negras o rosadas que suelen ser redondas y de tamaño pequeño. Generalmente no cambian con el tiempo.",
+        "tratamientos": "No requiere tratamiento a menos que se observen cambios sospechosos, en cuyo caso se recomienda extirpación y análisis."
     },
-    "Clase8": {
-        "descripcion": "Descripción de la afección 8.",
-        "sintomas": "Síntomas comunes de la afección 8.",
-        "tratamientos": "Posibles tratamientos para la afección 8."
+    "Pigmented benign keratosis": {
+        "descripcion": "La queratosis benigna pigmentada es una lesión cutánea no cancerosa que suele aparecer con la edad.",
+        "sintomas": "Manchas oscuras, marrones o negras, con una textura cerosa o verrugosa, frecuentemente en áreas expuestas al sol.",
+        "tratamientos": "No es necesario tratarla, aunque se puede extirpar por motivos estéticos mediante crioterapia, láser o cirugía menor."
     },
-    "Clase9": {
-        "descripcion": "Descripción de la afección 9.",
-        "sintomas": "Síntomas comunes de la afección 9.",
-        "tratamientos": "Posibles tratamientos para la afección 9."
+    "Rosacea": {
+        "descripcion": "La rosácea es una afección cutánea crónica que causa enrojecimiento, vasos sanguíneos visibles y, a veces, protuberancias similares al acné en la cara.",
+        "sintomas": "Enrojecimiento persistente en el centro del rostro, vasos sanguíneos visibles, y en algunos casos, hinchazón o picazón.",
+        "tratamientos": "Evitar desencadenantes, uso de cremas tópicas como metronidazol, antibióticos orales o terapia con láser para vasos visibles."
     },
-    "Clase10": {
-        "descripcion": "Descripción de la afección 10.",
-        "sintomas": "Síntomas comunes de la afección 10.",
-        "tratamientos": "Posibles tratamientos para la afección 10."
+    "Seborrheic keratosis": {
+        "descripcion": "La queratosis seborréica es un crecimiento benigno de la piel que se desarrolla con el envejecimiento.",
+        "sintomas": "Placas o protuberancias de color marrón, negro o amarillo con una apariencia cerosa o verrugosa.",
+        "tratamientos": "No suele requerir tratamiento, pero se puede eliminar por razones estéticas con crioterapia, raspado o láser."
     },
-    "Clase11": {
-        "descripcion": "Descripción de la afección 11.",
-        "sintomas": "Síntomas comunes de la afección 11.",
-        "tratamientos": "Posibles tratamientos para la afección 11."
+    "Squamous cell carcinoma": {
+        "descripcion": "El carcinoma de células escamosas es un tipo de cáncer de piel que se desarrolla en las capas superficiales de la piel.",
+        "sintomas": "Áreas gruesas, escamosas o con costras que pueden sangrar o formar úlceras, generalmente en áreas expuestas al sol.",
+        "tratamientos": "Extirpación quirúrgica, radioterapia o quimioterapia tópica con fluorouracilo o imiquimod."
     },
-    "Clase12": {
-        "descripcion": "Descripción de la afección 12.",
-        "sintomas": "Síntomas comunes de la afección 12.",
-        "tratamientos": "Posibles tratamientos para la afección 12."
+    "Vascular lesion": {
+        "descripcion": "Las lesiones vasculares son anomalías en los vasos sanguíneos de la piel que pueden ser congénitas o desarrollarse con el tiempo.",
+        "sintomas": "Manchas rojas, púrpuras o azuladas en la piel, como hemangiomas o malformaciones vasculares.",
+        "tratamientos": "Terapia con láser, cirugía o medicamentos para reducir el tamaño o mejorar la apariencia de las lesiones."
     }
 }

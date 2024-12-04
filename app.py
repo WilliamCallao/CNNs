@@ -23,12 +23,23 @@ model = model.to(device)
 model.eval()
 
 # Clases del modelo
-class_names = ['Clase1', 'Clase2', 'Clase3', 'Clase4', 'Clase5',
-               'Clase6', 'Clase7', 'Clase8', 'Clase9', 'Clase10', 
-               'Clase11', 'Clase12']
+class_names = [
+    'Acne',
+    'Actinic Keratosis',
+    'Basal Cell Carcinoma',
+    'Dermatofibroma',
+    'Eczema',
+    'Melanoma',
+    'Nevus',
+    'Pigmented Benign Keratosis',
+    'Rosacea',
+    'Seborrheic Keratosis',
+    'Squamous Cell Carcinoma',
+    'Vascular Lesion'
+]
 
 # Cargar información de afecciones desde el archivo JSON
-with open('afeccion_info.json', 'r') as f:
+with open('afeccion_info.json', 'r', encoding='utf-8') as f:
     afeccion_info = json.load(f)
 
 # Transformaciones para preprocesar la imagen de entrada

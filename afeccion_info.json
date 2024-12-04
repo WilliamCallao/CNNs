@@ -1,0 +1,62 @@
+{
+    "Clase1": {
+        "descripcion": "Descripción de la afección 1.",
+        "sintomas": "Síntomas comunes de la afección 1.",
+        "tratamientos": "Posibles tratamientos para la afección 1."
+    },
+    "Clase2": {
+        "descripcion": "Descripción de la afección 2.",
+        "sintomas": "Síntomas comunes de la afección 2.",
+        "tratamientos": "Posibles tratamientos para la afección 2."
+    },
+    "Clase3": {
+        "descripcion": "Descripción de la afección 3.",
+        "sintomas": "Síntomas comunes de la afección 3.",
+        "tratamientos": "Posibles tratamientos para la afección 3."
+    },
+    "Clase4": {
+        "descripcion": "Descripción de la afección 4.",
+        "sintomas": "Síntomas comunes de la afección 4.",
+        "tratamientos": "Posibles tratamientos para la afección 4."
+    },
+    "Clase5": {
+        "descripcion": "Descripción de la afección 5.",
+        "sintomas": "Síntomas comunes de la afección 5.",
+        "tratamientos": "Posibles tratamientos para la afección 5."
+    },
+    "Clase6": {
+        "descripcion": "Descripción de la afección 6.",
+        "sintomas": "Síntomas comunes de la afección 6.",
+        "tratamientos": "Posibles tratamientos para la afección 6."
+    },
+    "Clase7": {
+        "descripcion": "Descripción de la afección 7.",
+        "sintomas": "Síntomas comunes de la afección 7.",
+        "tratamientos": "Posibles tratamientos para la afección 7."
+    },
+    "Clase8": {
+        "descripcion": "Descripción de la afección 8.",
+        "sintomas": "Síntomas comunes de la afección 8.",
+        "tratamientos": "Posibles tratamientos para la afección 8."
+    },
+    "Clase9": {
+        "descripcion": "Descripción de la afección 9.",
+        "sintomas": "Síntomas comunes de la afección 9.",
+        "tratamientos": "Posibles tratamientos para la afección 9."
+    },
+    "Clase10": {
+        "descripcion": "Descripción de la afección 10.",
+        "sintomas": "Síntomas comunes de la afección 10.",
+        "tratamientos": "Posibles tratamientos para la afección 10."
+    },
+    "Clase11": {
+        "descripcion": "Descripción de la afección 11.",
+        "sintomas": "Síntomas comunes de la afección 11.",
+        "tratamientos": "Posibles tratamientos para la afección 11."
+    },
+    "Clase12": {
+        "descripcion": "Descripción de la afección 12.",
+        "sintomas": "Síntomas comunes de la afección 12.",
+        "tratamientos": "Posibles tratamientos para la afección 12."
+    }
+}
